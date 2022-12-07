@@ -10,7 +10,7 @@ from PIL import Image
 import nltk
 from keras.models import load_model
 from nltk.stem import WordNetLemmatizer
-
+nltk.download('punkt')
 
 lemmatizer = WordNetLemmatizer()
 
