@@ -100,8 +100,7 @@ def generate_answer():
         # Download the helper library from https://www.twilio.com/docs/python/install
         # Find your Account SID and Auth Token at twilio.com/console
         # and set the environment variables. See http://twil.io/secure
-        account_sid = 'AC3e670bf5eccf15c0a6f920632f9a29dd'
-        auth_token = '4a6c41cac69ae327018fdd5f99cc1618'
+
         client = Client(account_sid, auth_token)
 
         call = client.calls.create(
