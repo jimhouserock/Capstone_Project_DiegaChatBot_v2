@@ -10,6 +10,8 @@ from PIL import Image
 import nltk
 from keras.models import load_model
 from nltk.stem import WordNetLemmatizer
+import os
+from twilio.rest import Client
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -81,7 +83,6 @@ st.title("Diega, Le Wagon Web Assistant v2")
 
 
 
-#tag = lbl_encoder.inverse_transform([np.argmax(result)])
 if "history" not in st.session_state:
     st.session_state.history = []
 if 'generated' not in st.session_state:
@@ -91,44 +92,34 @@ if 'past' not in st.session_state:
     st.session_state['past'] = []
 
 
-# message = input("")
-#     ints = predict_class(message)
-#     res = get_response(ints, intents)
-#     print(res)
-
 
 def generate_answer():
     user_message = st.session_state.input_text
-    ints = predict_class(user_message)
-    out_message = get_response(ints, intents)
-    st.session_state.past.append(user_message)
-    st.session_state.generated.append(out_message)
+
+    if (user_message).upper()=="CALL DIEGO":
+        # Download the helper library from https://www.twilio.com/docs/python/install
+        # Find your Account SID and Auth Token at twilio.com/console
+        # and set the environment variables. See http://twil.io/secure
+        account_sid = 'AC3e670bf5eccf15c0a6f920632f9a29dd'
+        auth_token = '4a6c41cac69ae327018fdd5f99cc1618'
+        client = Client(account_sid, auth_token)
+
+        call = client.calls.create(
+                                url='http://demo.twilio.com/docs/voice.xml',
+                                to='+529871182931',
+                                from_='+17208066079'
+                            )
+        st.session_state.past.append(user_message)
+        st.session_state.generated.append("Sure, let me call my favourite person for you!")
+    else:
+        ints = predict_class(user_message)
+        out_message = get_response(ints, intents)
+        st.session_state.past.append(user_message)
+        st.session_state.generated.append(out_message)
+
     st.session_state["input_text"] = ""
 
-# def generate_answer():
-
-#     user_message = st.session_state.input_text
-
-#     result = model.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([user_message]),
-#                                              truncating='post', maxlen=max_len))
-
-
-    # tag = lbl_encoder.inverse_transform([np.argmax(result)])
-
-    # for i in data['intents']:
-    #         if i['tag'] == tag:
-    #             out_message=np.random.choice(i['responses'])
-
-    #             #st.session_state.history.append({"message": out_message, "is_user": False})
-    #             #st.session_state.history.append({"message": user_message, "is_user": True})
-    #             st.session_state.past.append(user_message)
-    #             st.session_state.generated.append(out_message)
-    #             #print (np.random.choice(i['responses']))
-    #             st.session_state["input_text"] = ""
-
-
-
-st.text_input("Type your questions below: ", key="input_text", on_change=generate_answer)
+st.text_input("Type your questions below: (Type 'Call Diego' if you want to call our Admission Manager, Diego, right away)", key="input_text", on_change=generate_answer)
 
 
 
@@ -137,6 +128,3 @@ if st.session_state['generated']:
     for i in range(len(st.session_state['generated'])-1, -1, -1):
         st_message(st.session_state["generated"][i], is_user=False, avatar_style="bottts",seed="11", key=str(i))
         st_message(st.session_state['past'][i], is_user=True,avatar_style="adventurer-neutral",seed="2", key=str(i) + '_user')
-
-#for chat in st.session_state.history:
-#    st_message(**chat)  # unpacking
