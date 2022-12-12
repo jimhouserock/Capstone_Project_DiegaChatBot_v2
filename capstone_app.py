@@ -12,6 +12,8 @@ from keras.models import load_model
 from nltk.stem import WordNetLemmatizer
 import os
 from twilio.rest import Client
+from tornado.escape import linkify
+
 
 nltk.download('punkt')
 nltk.download('wordnet')
@@ -87,7 +89,6 @@ if "history" not in st.session_state:
     st.session_state.history = []
 if 'generated' not in st.session_state:
     st.session_state['generated'] = []
-
 if 'past' not in st.session_state:
     st.session_state['past'] = []
 
@@ -98,15 +99,13 @@ def generate_answer():
 
     if (user_message).upper()=="CALL DIEGO":
         # Download the helper library from https://www.twilio.com/docs/python/install
-        # Find your Account SID and Auth Token at twilio.com/console
-        # and set the environment variables. See http://twil.io/secure
         account_sid = st.secrets["account_sid"]
         auth_token = st.secrets["auth_token"]
 
         client = Client(account_sid, auth_token)
 
         call = client.calls.create(
-                                url='http://demo.twilio.com/docs/voice.xml',
+                                url='./voice.xml',
                                 to='+529871182931',
                                 from_='+17208066079'
                             )
