@@ -10,9 +10,7 @@ from PIL import Image
 import nltk
 from keras.models import load_model
 from nltk.stem import WordNetLemmatizer
-import os
 from twilio.rest import Client
-from tornado.escape import linkify
 
 
 nltk.download('punkt')

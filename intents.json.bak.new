@@ -1,0 +1,378 @@
+{"intents": [
+  {"tag": "greeting",
+   "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay", "Hi there", "Hola", "how you doing?", "how are you", "Hows your day?", "Whats up"],
+   "responses": ["Hello", "Hi", "Hi there", "Good day", "Hola", "Good to see you", "Hello, How can I help?", "Thanks For Asking! How can I help you?"]
+  },
+
+  {"tag": "goodbye",
+   "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+   "responses": ["See you later", "Have a nice day", "Bye! Come back again", "Goodbye", "See you soon hopefully"]
+  },
+
+  {"tag": "noanswer",
+   "patterns": [],
+   "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+  },
+
+  {"tag": "thanks",
+   "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help","Awesome", "thanks", "Thanks for helping me"],
+   "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!", "Glad to assist you"]
+  },
+
+  {"tag": "about",
+   "patterns": ["Who are you?", "What are you?", "Who you are?" ],
+   "responses": ["I am Diega, your assistant.", "I am Diega, nan Artificial Intelligent bot"]
+  },
+
+  {"tag": "name",
+  "patterns": ["what is your name", "what should I call you", "whats your name?","How can I call you?"],
+  "responses": ["You can call me Diega.", "I am Diega!", "Just call me as Diega", "Hey! I'm Diega"]
+  },
+
+  {"tag": "help",
+  "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?", "Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need a support", "I need a help", "support me please"],
+  "responses": ["Tell me how can I assist you", "Tell me your problem to assist you", "How can I support you"]
+  },
+
+  {"tag": "career support",
+  "patterns": ["Do you offer career support?", "What kind of job support you offer?", "Post-graduation job support?", "What is the career week about?"],
+  "responses": ["Once the bootcamps ends, you will benefit from our career services. Our local team will introduce you to the right people depending on your goal and you will meet with inspiring alumni who will come back to share their post-bootcamp experiences, like how they found a job, started their own company or freelancing career. \nOur local team will help you prepare for tech interviews, meet the best local recruiters and connect with relevant alumni. \nYou will also have access to a complete guide to kick-start your tech career after the course: boost your portfolio, prepare for technical interviews, leverage on our 10,000 alumni community, but also to lots of useful Slack channels to find jobs or freelance opportunities. \nThese are some career services we will provide: \nNetworking events, job fairs, career workshops and office hours with alumni or tech recruiters. \nCoaching sessions with our Talent Manager or local alumni. \nResources our Career Playbook. \nIntroductions to our network of hiring partners through our Hiring Newsletter. \nCareer week with practical workshops (from building a portfolio to inspiring talks)"]
+  },
+
+  {"tag": "funding options",
+  "patterns": ["Are there other funding options available?", "Can I defer tuition?", "Do you offer deferred tuition?","Do you have tuition, student loans or ISA?"],
+  "responses": ["Some cities offer specific funding options with local financial partners, like deferred tuition plans, student loans with interesting conditions or Income Share Agreements (ISA). Again, you will find more details about these options on the page of each city on Le Wagon’s website. Also feel free to reach out to the local admission manager to have more details about their local funding options."]
+  },
+
+  {"tag": "B2B",
+  "patterns": ["Do you have a B2B training offer?", "Do you have business to business training package?", "Do you have courses for businesses?","Do you have curriculum for existing businesses?"],
+  "responses": ["Based on our experience with our bootcamps for the past 8 years, we came up with a complete offer for companies. We create tailored education programs that drive and complement your digital objectives by teaching your employees the basics of Web Development and Data Science. Depending of your needs we can build the program which will suits your company's interests best."]
+  },
+
+  {"tag": "Mature Students",
+  "patterns": ["I'm over 50 years old, should I apply?", "I'm old, should I apply?", "I'm a mature student, is it okay?","Your courses are for older students too?"],
+  "responses": ["We’ve had students over 50 in the past and they’ve succeeded in learning Web Development or Data Science and staring new careers like anyone else. Age doesn’t make any differences in the recruitment process to get onboard, the only thing we consider is your commitment and your motivation."]
+  },
+
+  {"tag": "End Result Data Science & Web Dev",
+  "patterns": ["What will I be able to build at the end of the Data Science bootcamp?", "What will I be able to do at the end of the Data Science bootcamp?", "What can I build at the end of the Data Science bootcamp", "What do I get out of the Data Science bootcamp?", "What is the end goal of the Data Science bootcamp?", "What will I be able to build at the end of the Web Development bootcamp?", "What will I be able to do at the end of the Web Development bootcamp?","What can I build at the end of the Web Development bootcamp","What do I get out of the Web Development bootcamp?","What is the end goal of the Web Development bootcamp?"],
+  "responses": ["At the end of the Data Science bootcamp: \nYou will have all the skills you need to launch your career in a Data Science team. You will finish the course knowing how to explore, clean and transform data into actionable insights and how to implement machine learning models from start to finish in a production environment, working in teams with the best-in-class tool belt. \n\nAt the end of the Web Development bootcamp: \nYou will have a Ruby on Rails junior developer level. This means you will be able to quickly prototype your ideas by creating web applications on your own. For instance, you will know how to include authentication to your web application (simple signin/signup, or Facebook/WeChat connect), add an admin back-office, include payment features, automate e-mails sending, and much more. \nYou will also know how to quickly deploy in production and you will have learnt the programming best practices used by the best tech companies."]
+  },
+
+  {"tag": "Payment Plan",
+  "patterns": ["Can I pay for the program once I have finished it?","When should I pay for the full tuition?","What payment plans do you offer?", "What are the instalments and payment schedule?", "What is the payment schedule?"],
+  "responses": ["Once a candidate is officially admitted, a down payment will be required upon the training agreement signature to secure the student's seat. The remaining balance shall be paid in one or several instalments, depending on the city policies."]
+  },
+
+  {"tag": "Le Wagon",
+  "patterns": ["What is the main difference between Le Wagon and other coding bootcamps?", "Why do I choose Le Wagon bootcamp?", "Why should not I choose other bootcamps?"],
+  "responses": ["8 years of experience. \nLe Wagon was founded in 2013 and has more than 8 years of experience teaching tech skills and helping people change their life, start a career in tech and thrive in their new job. More than 15,000 alumni have graduated from our bootcamps in 45 cities around the world, and Le Wagon is the most acclaimed coding bootcamp worldwide on Switchup according to student reviews. Feel free to reach out to any of our graduates on Linkedin to hear what they have to say about Le Wagon. \n\nMaking you team-ready. \n\nWe've spent a lot of time improving our two bootcamps in Web Development and Data Science to teach our students the core concepts and give them solid foundations, but also to make sure they learn how to collaborate in a tech team with the right methodology and workflow, and that they know how to use modern tools and apply best practices in Web Development and Data Science. This makes Le Wagon's graduates extremely interesting for tech recruiters since lots of other bootcamps don't necessarily teach these extra skills focusing their curriculum more on a specific technology or language. \n\nA unique community\nLe Wagon's community is the most active bootcamp network with more than 14,000 alumni, 210 startups founded by alumni (raising more than $862 million altogether) and 1000 teachers in Web Development and Data Science. Once you graduate from Le Wagon, you belong to this vibrant family, you will keep learning for life with the support of this community, and access unique job and freelance opportunities."]
+  },
+
+  {"tag": "Company Partnership",
+  "patterns": ["Is it possible to share my company’s job offer(s) with your alumni?", "I would like to share a job offer with your school.", "My company would like to post a job at Le Wagon.","How does partnership with Le Wagon work?"],
+  "responses": ["Many companies share their job offers with our alumni. However, recruitment is a long-term relationship and as such we would love to connect with you first!"]
+  },
+
+  {"tag": "Minor",
+  "patterns": ["I'm under 18 years old, can I apply?", "Can I join your school as a minor?", "I'm young, can I still apply?"],
+  "responses": ["You need to be 18 to enroll for the course. However, you can apply if you are 17 as long as you turn 18 before the start of the bootcamp."]
+  },
+
+  {"tag": "Visa",
+  "patterns": ["Do you give any help to get a visa?","Do you help international students to get a visa?", "I'm an international student, can I apply?", "Do I need Visa to come to Mexico?"],
+  "responses": ["Le Wagon can't arrange any kind of visa, not for studying nor working. We can give you all the required documents to present at your Embassy. Remember that if you want us to support your job search, you need a work permit to work in the country you are applying to.","Depending on your situation and where you would like to do the bootcamp, you will potentially need a tourist or business visa. Please reach out to the city's Admissions Manager for more information and possible assistance. \nExtra information: for mainland China, in some cases, we can invite you on a Business Visa (M). Duration and number of entries vary according to your nationality. Please consult our team to have more information."]
+  },
+
+  {"tag": "finance",
+  "patterns": ["Are there any scholarships available?","Do you offer any scholarships?","What about scholarships?"],
+  "responses": ["Some cities offer scholarships for co-founders, locals, women in tech, or in partnership with local organisations. You will find more details about these scholarships on the page of each city on Le Wagon’s website. Also feel free to reach out to the local admission manager for more information and possible assistance."]
+  },
+
+  {"tag": "full-time vs part-time",
+  "patterns": ["What is the difference between the Full Time and the Part Time format?","What is the schedule of the class?", "What is the course schedule?", "what about the full time course?","Can you provide information on the part time course?", "what is the level of commitment required?", "Can you tell me more about the part time course?"],
+  "responses": ["The full-time bootcamp is a 9-week program, from Monday to Friday, 9am - 6pm. \nThe part-time bootcamp is a 24-week program, where students come for two on-campus sessions from 6:30pm to 9:30pm generally on Tuesday evening and Thursday evening and for an additional session on Saturday all day from 10am to 5pm."]
+  },
+
+  {"tag": "company",
+  "patterns": ["Can my company participate in your recruitment events?","Can my company recruit students?"],
+  "responses": ["Yes! We hold regular recruitment events, during which our hiring partners meet our students and alumnis."]
+  },
+
+  {"tag": "student profile",
+  "patterns": ["What profiles do we have in the bootcamp?","What is the typical profile of a Web Developer?","Is there a typical profile for a Le Wagon student?","How is they typical Le Wagon student?"],
+  "responses": ["Our students all have very different profiles. They are between 18 and 55, and they all share the same curiosity and enthusiasm for coding and data. They all come from various background: undergraduates, marketers, engineers, sales, lawyers, journalists, architects, musicians..."]
+  },
+
+  {"tag": "next dates",
+  "patterns": ["What are the dates of the bootcamp?","What are the next Web Development class dates?","What are the next Data Science bootcamp dates?","When will the next sessions take place?", "When will the next course begin?"],
+  "responses": ["You can check the next dates on the website, visiting each campus and course page.","We usually open applications 4 to 5 months in advance. You will see the next batch dates on the page of each city on Le Wagon's website, you may contact Diego for further information."]
+  },
+
+  {"tag": "mobile",
+  "patterns": ["Will I learn mobile app development?"],
+  "responses": ["You will learn some basic concepts behind mobile app development, yet we honestly believe that ful mobile app development can be thought in 9 weeks."]
+  },
+
+  {"tag": "fees",
+  "patterns": ["What is the price of the program?","How much should I pay to book my spot in the program?","What are the tuition fees?"],
+  "responses": ["The place reservation has a different amount for each campus. As of now in Mexico city the price is roughly 100k MXN","Price may vary depending on the location and its cost of living. As of now in Mexico city the price is roughly 100k MXN"]
+  },
+
+  {"tag": "accommodation",
+  "patterns": ["Do you help in finding accommodation?","Do you provide accommodation/catering?"],
+  "responses": ["We can give you some tips and put you in contact with our students' network once you are enrolled, but Le Wagon doesn't have any residence or housing available in the campus.","We do not provide accommodation or catering. The price of the course only includes the tuition - and unlimited tea and coffee. You may ask Diego for more details"]
+  },
+
+  {"tag": "background",
+  "patterns": ["I dont know aything about coding, is it ok?","I never coded in my life, Can I still attend the bootcamp","I have more than 10 years of working experience, is the bootcamp for me?","I have never done any coding before, can I join the Web Dev, Data Analytics or Data Science Bootcamps?","What are the pre-requisites to access the Web Development bootcamp?","I don't know anything about Web Development but I love it, could I join the bootcamp?","How do you reconcile the knowledge gap between students with different technical/programming levels?", "I don't have any technical background, can I join the course?", "I don't have any knowledge about coding, would that be ok?", "What are the challenges of the bootcamp If I don't have any background?"],
+  "responses": ["Firstly, the goal of our admissions process is to select a cohort that will be able to move more or less at the same pace. Secondly, completing the pre-work is important to make sure that everyone has the same foundational knowledge. That being said, some people will move faster than others, but that's OK! Our curriculum is designed to adapt itself to those that are moving more quickly and those that need a bit more personalized attention.","You only need a strong motivation to join the course! The Data Science course requires a little bit more of a maths background"]
+  },
+
+  {"tag": "application",
+  "patterns": ["Could you tell me more about the admission steps","How does the admissions process work?", "How can I apply for the course?", "What is the application process like?", "How to apply?", "How can I book an interview?", "I want an appointment with ", "Could you set an appointment with?", "Could you make an appointment?", "Is my appointment fixed?"],
+  "responses": ["Complete the application form on our website by selecting: 1. Web Development or Data Science course \n2. 9-week full-time or 24-week part-time \n3. The city \nWe will then contact you to schedule an interview (either in-person or online) to understand your motivations in more detail.", "Our application process is made up of three steps:\nAn online written application form\nA personal interview to get to know you better\nA final technical interview to assess your ability to pick up the concepts that will be covered in your course quickly."]
+  },
+
+  {"tag": "evaluation",
+  "patterns": ["What is Le Wagon looking for in their students?","How will you evaluate my online application?", "How will you assess my online application?", "How will you evaluate the application?"],
+  "responses": ["Our values are: passion above anything else, love people and their stories and can-do attitude We are looking for students that are able to work hard, help others and willing to learn" ,"Our bootcamps are very intense, fast-paced and demanding, and we will select only the most motivated students to get onboard. To apply for out Data Science bootcamp, a basic mathematic & programming background is also required."]
+  },
+
+  {"tag": "interview",
+  "patterns": ["What is the admissions interview about?","What's the interview about?", "Whats the interview about?", "What questions will be asked in the interview?"],
+  "responses": ["Web Development course: \nOur Admissions Manager will mostly assess your motivation as well as your professional and personal projects during the interview, to make sure they are consistent with the outcomes of the bootcamp. \nData Science course: \nOur Admissions Manager will also ensure that you already have some prerequisite skills in programming and Mathematics since the course builds up on these foundations. \nVery quickly after the interview, you'll receive a notification to let you know if you've passed the interview and will provide you a link to an online test, taking about 2 hours, to check your mathematics and programming skills."]
+  },
+
+  {"tag": "approval",
+  "patterns": ["How will I know if I get accepted?", "When will you inform if I get accepted?", "Is there a test to be accepted?", "Is there a test after applying the course?"],
+  "responses": ["Web Development: \nIf you pass the interview and complete the online quiz, it means you have the right motivation and are ready to dive into programming for two months. \nData Science course: \nIf you pass the interview with our Admissions Manager and the online assessment, it means you have both the motivation and the prerequisite skills."]
+  },
+
+  {"tag": "prepwork",
+  "patterns": ["Could you tell me about the prepwork?","What is the pre-work? Hoy many hours do you need for it?","Is there any preparation work once I get accepted?", "What's the preparation work?", "What should I study before joining the bootcamp", "What I will do in practice"],
+  "responses": ["Yes, we will send you an online preparation work once you've passed all the selection process. This prepwork is absolutely mandatory and must be completed before the beginning of the bootcamp. \nWeb Development course: \nThis work takes around 60 hours and will give you a basic knowledge of how the web works, terminal basic commands, versioning and basic concepts of web development and tech workflows. \nData Science course: \nThis work takes around 40 hours and covers the basics of programming with Python and SQL as well as some key concepts of Mathematics used every day by data scientists."]
+  },
+
+  {"tag": "project idea",
+  "patterns": ["I don't currently have an idea of a final project to work on. Is that a problem?", "I don't have an idea of a final project. Is that ok?"],
+  "responses": ["Don't worry about it! Students with a project are invited to pitch their idea during the bootcamp while people without one are welcome to team up with them."]
+  },
+
+  {"tag": "waiting list",
+  "patterns": ["Can I join a waiting list if a session is full?", "Can I join a waiting list if a batch is full?"],
+  "responses": ["We always open a waiting list when bootcamps are full, in case this happens! To join the waiting list, you will have to to go through the exact same application process."]
+  },
+
+  {"tag": "language",
+  "patterns": ["What is the language of the program?","What language is the bootcamp taught in?", "What language is the bootcamp?", "What's the language in the bootcamp?", "What's the language of the course?", "Is the bootcamp in English?", "Courses are available in English?"],
+  "responses": ["In most cities, the bootcamp is taught in English. \nIn French cities, the program is in French. You will have a 1h30 lecture in the morning in French, and a 1h30 live-code in the evening in French as well. \nIn some other cities (São Paulo, Shanghai, Chengdu, Tokyo) specific sessions are organised in other languages (Brazilian Portuguese, Chinese, Japanese). You can check the language of the next batch on the 'Apply' page. \nExtra info: all the challenges' instructions and written documentation are in English, so all students must have a good level and understanding or written English, even in cities where lectures are given in another language."]
+  },
+
+  {"tag": "tdd",
+  "patterns": ["Do you teach TDD?", "Do you teach TDD? (Test Driven Development)"],
+  "responses": ["We do teach TDD. Every day, students work on exercises prepared and refined for 8 years by Le Wagon’s pedagogical team."]
+  },
+
+  {"tag": "laptop",
+  "patterns": ["Should I bring my own computer to the classes?","Do I need to have my own computer? Should it have specific requirements?","Do I need my own laptop?", "Do I need a laptop?", "Do I need a computer", "Do I need a pc"],
+  "responses": ["Yes, you should have your own computer. For all of our courses, you can choose a Mac or a PC with any operating system. In general, the computer should have 8GB of RAM and no older than 5 years. If you have questions, you can check with your Admissions Manager to see what is recommended.","Yes, you should have your own computer. If you are enrolled in the Web Dev or Data Analytics Bootcamps, any operative system should be fine. In general, the computer should have 8GB of RAM and no older than 5 years.","Each student must have a laptop. You’ll need Mac OS X, Linux or Windows. \n:warning: A Microsoft Surface or Apple iPad won't do. Those are not real computers."]
+  },
+
+  {"tag": "difference",
+  "patterns": ["Could you tell me about the difference between bootcamp and college?","What is the difference between a Bootcamp and traditional education?","What's the main difference between Le Wagon and academic degree in Computer Science or Data Science?", "What's the main difference between thr Data Science course and academic degree?"],
+  "responses": ["Bootcamps are not for everyone, even if anyone can apply for them. The concept of bootcamp comes from the military camps: it means effort, teamwork and passion above anything else. Our Bootcamps are designed for reinventing education and go beyond the passive traditional education. Learning is based on projects, and there are no grades or exams. You will get constant feedback from teachers and classmates, our methodology is hands-on and you will be supported by the Careers Department to achieve your career goals. At Le Wagon, the title is not the most important thing, but our job market network, our ability to adapt the content to the market needs and the technical skills of the Le Wagon.","The main difference between an academic degree and a bootcamp is that we don't start from scratch and we learn with a lot of practice using modern tools and methods. \nIn an academic curriculum in CS or DS, you will start learning all the theoretical knowledge (e.g. hardware layer of your computer for a CS degree, or advanced concepts of linear algebra and statistics for a DS degree) before moving to applied topics like web development or machine learning."]
+  },
+
+  {"tag": "city",
+  "patterns":["How should I choose the right city to do the course?","How would you recommend a city for me to work on?"],
+  "responses":["Le Wagon fulfils the exact same mission in all of our locations. The curriculum is the same everywhere as are all of our materials (lectures and exercises). We suggest you think about each city's environment, quality of life and langugage!"]
+  },
+
+  {"tag": "job",
+  "patterns":["Will I be able to apply to a data scientist job?", "Will I get a job afterwards?"],
+  "responses":["The job title 'Data Scientist' can correspond to very different roles depending on the company (startup, scale-up, big company), the product you're working on and the team you will join."]
+  },
+
+  {"tag": "Campus",
+  "patterns":["Where is the campus?","What is the address of the campus", "Where is the bootcamp located?","Where is the bootcamp?"],
+  "responses":["Here is the address: Av. Álvaro Obregón 213, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX \nWould you like to see on the map?"]
+  },
+
+  {"tag": "virtual or in-person",
+  "patterns":["Are the classes in person ?","Would I be able to apply for remote if I am in a different continent?","Is the program taught in person or online?","Virtual class and in-person class, which one is better?", "Which one would you recommend: virtual class or in person?"],
+  "responses":["Le Wagon teaches face to face programs in Mexico City, Mexico. We also offer remote programs with a live virtual environment for students from all over the world."]
+  },
+
+  {"tag": "Data Analyst",
+  "patterns":["What is the data analyst course?", "Could you tell me about Data Analyst bootcamp?"],
+  "responses":["Our Data Analytics course includes an introduction to understanding the fundamentals of machine and deep learning. However, it does not provide a complete understanding of the field."]
+  },
+
+  {"tag": "payment type",
+   "patterns": ["Can I pay cash when i arrive?","Can I pay with my credit card?","Do you take credit cards?", "Do you accept Mastercard?", "Are you accepting cash only?" ],
+   "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+  },
+
+  {"tag": "hours",
+       "patterns": ["How many hours is the class in a day?","How many hours per day should I dedicate to the bootcamp?","What is the class schedule?","when does the class begin?","What hours is the campus open?", "When is the campus open?", "What time does the class start", "What time is the bootcamp", "Opening hours of the campus?", "campus opening time" ],
+       "responses": ["Our classes start from Monday to Friday, at 9am sharp - 6pm.","In the Full Time program the classes are from Monday to Friday from 9am to 6pm. In the Part Time program the classes are either Monday and Wednesday or Tuesday and Thursday from 6.30pm to 9.30pm and Saturdays from 10am to 5pm. This schedule may be subject to changes, so please always check with your Admissions Manager before enrolling in the program."]
+  },
+
+  {"tag": "complaint",
+    "patterns": ["I have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+    "responses": ["Please provide us your complaint in order to assist you", "Please mention your complaint, we will reach you and sorry for any inconvenience caused"]
+  },
+
+  {"tag": "suggest",
+    "patterns": ["you are useless","useless","suggest","suggestions","you are bad"],
+    "responses": ["Please contact for your suggestions to our Admission and Sales Manager, Diego Garza. Thank you for helping me improve!"]
+  },
+
+  {"tag": "Mexican citizens & residents",
+    "patterns": ["I am a Mexican citizen. What are the available payment options for me","What are the financing options for Mexican citizens?", "What are the financing options for Mexican residents?"],
+    "responses": ["Take a look at our financing options: \nPayments in 18 months. \nPlease check the following link for details: https://accedeeducacion.com/lewagon/ \nFull-time: Monthly payments of $3,450.15 pesos \nPlease check the following link for details: https://accedeeducacion.com/lewagonflex/ \nPart-time financing options: Monthly payments of $3,593.70 pesos \nPlease check the following link for details: https://accedeeducacion.com/lewagonflexpart/"]
+  },
+
+  {"tag": "10% discount",
+    "patterns": ["Can I get a discount if I apply early?","If I apply early, a discount is available?"],
+    "responses": ["Submit your program deposit two months prior to the program start date and receive a 10% discount on your program tuition! This discount is applicable for both our Web Development and Data Science Bootcamp and can be applied throughout the year.\nDiscounts are not accumulative."]
+  },
+
+  {"tag": "5% discount",
+    "patterns": ["Can I get a dicount if I pay in advance?","If I pay upfront at once, a discount is available?"],
+    "responses": ["For everyone applying to Le Wagon in Mexico, you must just pay your entire tuition at the time of your enrollment to be eligible for the 5% discount.\nDiscounts are not accumulative."]
+  },
+
+  {"tag": "Alumni discount",
+    "patterns": ["I have a reference. Can I get a dicount?","Is alumni discount available?", "What is the percentage of the alumni discount?"],
+    "responses": ["If you want to study in Le Wagon because alumni recommended it to you. Receive a 10% discount. Important to mention the name of Le Wagon Alumni in your admissions process.\nDiscounts are not accumulative."]
+  },
+
+  {"tag": "Woman discount",
+    "patterns": ["Is there any discount option available for women?"],
+    "responses": ["We offer scholarships 10% discount to any woman aspiring to be a Le Wagon student.  \nDiscounts are not accumulative."]
+  },
+
+  {"tag": "Data Analyst vs. Data Scientist",
+    "patterns": ["What is the difference between Data Analyst vs. Data Scientist?", "Could you tell me about teh difference Data Analyst vs. Data Scientist"],
+    "responses": ["A Data Analyst:\nUtilizes the data collected to draw insights based on patterns and trends.\nWorks with defined sets of data to answer the questions and needs of the business.\nWorks through data mining, statistical analysis, and SQL to retrieve data.\nCreates databases and data systems in order to better interpret the data.\nPrepares reports based on their findings of current trends in data.\nA Data Scientist, on the other hand:\nCreates algorithms and statistical models in order to get a sense of what’s unknown.\nOrganizes undefined data sets through the use of multiple data collection tools.\nCreates predictive algorithms in order to collect the necessary information from the data.\nWorks with object-oriented programming and machine learning.\nWorks with undefined sets of data to find the solution to complex problems."]
+  },
+
+  {"tag": "invalid",
+    "patterns": ["Marry me","I love You","date me","chat with me","I am bored"],
+    "responses": ["Please ask course related query."]
+  },
+
+  {"tag": "W",
+    "patterns": ["why","how","when","I","you","Tell me"],
+    "responses": ["Can't Understand Your Question","please elaborate your question"]
+  },
+
+  {"tag": "no of students/teachers",
+    "patterns": ["How many teachers are there in the bootcamp?","How many students are there usually per class?","How many students are there in the class?","How many people are there usually per class?","How big are the classes?"],
+    "responses": ["It varies depending on the bootcamp and campus, but we typically have around 8 students per class. There are 3 Lead Teachers per bootcamp and 1 Teacher Assistant for every 8 students. "]
+  },
+
+  {"tag": "certificate",
+    "patterns": ["Will I get a certificate after completion of the program? Is it an official certificate?"],
+    "responses": ["Le Wagon provides a private certificate that proves that the program was completed. \nThe bootcamps are not recognized by the traditional standards of the Education administration. Due to its intensive and hands-on format, it wouldn't be possible to adapt the content and schedules to the official requirements."]
+  },
+
+  {"tag": "holidays",
+    "patterns": ["Are there any holidays during the bootcamp?","Are there any free days during the course?"],
+    "responses": ["In the Full Time program you won't have any free day, you will have class every day from Monday to Friday until the training ends. In the Part Time porgram some free days are given and you will have Christmas and Easter holidays, according to each country calendar. We will send you the calendar when the program starts."]
+  },
+
+  {"tag": "salary",
+    "patterns": ["What is the average salary of a Web Developer?"],
+    "responses": ["The salary range of a Web Developer depends on the level of expertise and specialization, as well as the specific country he/she is looking for a job. Usually, at Le Wagon our students have a Junior profile and get jobs that don't require any previous experience. You can ask your Admissions Manager in the specific campus you choose, to know about the estimated salary in the country where you want to study."]
+  },
+
+  {"tag": "without enrollment",
+    "patterns": ["Is it possible to learn all this without enrolling a program?"],
+    "responses": ["Each person chooses their own learning path; however, many self-taught students give up this kind of training due to lack of motivation and models. In our program, you will have tight deadlines. You will be able to ask your questions to our Lead Teachers, and you will have to put every lesson into practice with real-life projects that will be supervised by the Education team. Also, it will be an inmersive experience in which your classmates will become your family."]
+  },
+
+  {"tag": "learning in short time",
+    "patterns": ["Is it possible to learn all this is 3 months (Full Time) or 6 months (Part Time)?"],
+    "responses": ["Yes, it is possible! You will need to dedicate a lot of work, show true passion and make sure this is for you."]
+  },
+
+  {"tag": "course structure",
+    "patterns": ["What does the structure of the Data Analytics bootcamp look like?"],
+    "responses": ["The program has the same structure both in the full time or part time formats: the only difference is the duration of each module. The program is divided in three modules: in the first one, you will get started in Python and visualization tools, in the second part you will start working with statistics and probability and in the third module you will learn the basics of Machine Learning and you will be able to do your project from scratch. You will finish the program with a final project in which you will combine the technical and analytical skills. You will work with pair programming methodology, but all your projects will be done individually"]
+  },
+
+  {"tag": "included",
+    "patterns": ["What is included in the program?"],
+    "responses": ["Each program is different. In general terms, the programs include 50 hours of pre-work, 9 or 24 training weeks and 1 extra week of career support. All the programs' structures are divided in 3 modules and end with a final project that the student should create from scratch and present to the class."]
+  },
+
+  {"tag": "online test",
+    "patterns": ["What is the online test about?", "What is the content of the technical quiz?"],
+    "responses": ["The online test will evaluate your logical skills according to the requirements of the program. It is not a test based on knowledge but on abilities. We will send you the link, user and password so that you can take it as soon as possible. All you need is a free hour, good internet connection and avoid distractions. If you pass the test and the personal interview, you will recieve an admission letter for the program. The test doesn't require any preparation or pre-work, you just need to show your logical skills"]
+  },
+
+  {"tag": "each program about",
+    "patterns": ["What is each program about?"],
+    "responses": ["You can download the syllabus for each course on our website. As a recap: The Data Analytics Bootcamp combines Python with statistics and probability; it is the best option for those who want to work with data and decision making from a technical approach. The Web Development Bootcamp is focused in coding: you will learn HTML, Javascript, CSS... to develop webistes and web applications."]
+  },
+
+  {"tag": "professional profile",
+    "patterns": ["What professional profile will I have at the end of the program?"],
+    "responses": ["Le Wagon bootcamps are designed for you to start your career as a Junior Data Analyst, Web Developer or UX/UI Designer profile. However, depending on your background and expectations, we can give you orientation to make sure this is the training you are looking for. During the Career Week, our Career Coaches will help you stablish your goals and will guide you in your job search. Keep in mind that you will do a personal interview before your admission to the program and we will be able to evaluate your personal situation."]
+  },
+
+  {"tag": "content for all campuses",
+    "patterns": ["Is the program the same in all campuses?"],
+    "responses": ["Yes, the content is the same for all Le Wagon campuses. Of course, each instructor has its own teaching style but the methodology and structure will always be the same. This alignment allow us to implement changes in the curriculum when we detect global trends or include improvements based on the feedback from students coming from different parts of the world."]
+  },
+
+  {"tag": "methodology",
+    "patterns": ["What is the methodology applied in the program?"],
+    "responses": ["At Le Wagon our course and teaching practices follow three themes of pedagogy established through decades of teaching and learning research: Constructive LearningWe recognize the difference between individuals and focus on avoiding the cookie-cutter education model often found in traditional schools. We provide the maximal guidance and instructional support to our students when they need them. Meanwhile we encourage motivated and capable students to continue learning beyond the curricula by providing additional learning resources that are carefully selected to strengthen their knowledge. What's more, every student will have the opportunity to idealize, prototype, and develop their own projects they feel fun and meaningful. We try our best to make our students feel their learning experiences are fulfilling and useful for realizing their dreams.Learning By DoingThe best way to learn technology is by doing it. Our curricula is filled up with carefully designed hands-on exercises to help students translate knowledge into skills. While applying what they think they know in the hands-on work, students often find holes and mismatches in their knowledge maps. They will then amend and fix those secretive problems. Also, during the iterative trial-and-error learning process, students will discover relations between seemingly isolated concepts and identify the most efficient way to accomplish tasks.Cognitive Apprenticeship \nYou will find our instructors love explaining the 'whys' in addition to the 'hows' in coding and designing. This is because experts really differ from novices by knowing what to do at the right time and context. As apprentices of coding and design, it is important for the students to know the cognition of the veterans in order to really master the knowledge."]
+  },
+
+  {"tag": "homework",
+    "patterns": ["How many extra hours will I have to spend in homework?"],
+    "responses": ["Le Wagon Bootcamps are really demanding. If you choose the Full Time program, you will have to dedicate all your free time during the week and one weekend day (Saturday, for example). We recommend you to rest at least one day in the weekend. If you choose the Part Time program you will have to dedicate about 10 or 15 extra hours, but this is a program compatible with your 8 hours job."]
+  },
+
+  {"tag": "teachers",
+    "patterns": ["Who are the teachers?"],
+    "responses": ["Our teachers are qualified professionals with wide experience who understand the needs of the job market and are used to train students with no technical background. You can see their profiles on the website, in each campus. The Full Time teachers combine teaching with their projects and personal companies, whereas the Part Time teachers work at the same time in other companies or in their own projects."]
+  },
+
+  {"tag": "enrollment change",
+    "patterns": ["Can I enroll in one date and change afterwards?"],
+    "responses": ["Yes, you can change your starting date if you let us know in advance and if there are available spots in the program. Please, remember that the place reservation payment is not refundable - exceptions are only made in a case by case basis"]
+  },
+
+  {"tag": "job search support",
+    "patterns": ["Does Le Wagon support me in the job search?"],
+    "responses": ["Yes, Le Wagon is committed to their students to help them achieve their professional goals. We believe this is part of our mission and we want students to get involved in their own success. We have a Career Services department whose objective is to create relationships with companies and follow up with students in their selection processes. All our bootcamps include a Career Week in which you will develop and put into practice Job Hunting skills, we will help you to put together your CV and portfolio to get ready for the job market. The attitude, performance during the bootcamp and commitment of the students with their own goal is key to the success in the job search."]
+  },
+
+  {"tag": "finding job after graduation",
+    "patterns": ["Will I be able to find a job after graduation even though I have zero experience in the field?"],
+    "responses": ["If your professional goals in terms of salary and job position are aligned with the job market, you can find a job in around 3 to 6 months after graduation. From Le Wagon, we fight for tech companies to become more diverse in terms of backgrounds, ages and gender in their teams. That is why we try to demonstrate the ability of our students and get them ready for the most demanding selection processes."]
+  },
+
+  {"tag": "job guarantee",
+    "patterns": ["Does Le Wagon guarantee a job?","Do you guarantee a job after the bootcamp?"],
+    "responses": ["No, Le Wagon never guarantees a job. If the students meet the criteria established in the contract, Le Wagon can support them and give them guidance in the job search. Guaranteeing a job is something that is not in the school scope of work, it depends on the company and the student."]
+  },
+
+  {"tag": "work in other country",
+    "patterns": ["Can Le Wagon help me if I want to work in any other country?"],
+    "responses": ["Le Wagon wants to help you to get your professional goals. If we don't have a campus in the country where you want to work, we can't guarantee direct help as we do in the countries where we are based on. However, you will have the support of your Career Coach to define an action plan and you will have acces to the Alumni network to get started wherever you want to be. As an Le Wagoner, you belong to a global community"]
+  },
+
+  {"tag": "graduates",
+    "patterns": ["Where are Le Wagoners working now?"],
+    "responses": ["During the bootcamp you will learn the most required abilities, that is why some of our graduates are hired in all kinds of companies, from big companies to other tech start-ups that share our values, consultant companies and agencies. Check the Le Wagoners LinkedIn profiles to get inspired!"]
+  }
+
+]
+}
