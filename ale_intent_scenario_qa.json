@@ -1,0 +1,34 @@
+# this three question set represent HUMAN and  likely questions from the mexican students
+
+
+   {
+    "patterns": ["Does Le Wagon plan on openning another campus in Mexico?"],
+    "responses": [" For the time being Le Wagon is based on Mexico City's impact hub building. There is a chance for you to take the corse remotely, yet we strongly recommend you chose the in-person course! Come to Mexico City!"]
+   },
+
+   {
+    "patterns": ["What are the biggest advantages of taking the bootcamp at the Mexico City camppus?"],
+    "responses": [" Mexico city is a modern, tolerant and vibrant city. The cost of living is much lower when compared to our US and Europe campuses. The city is the most important business and tech related hub in the country. Taking the course here might increase your chances of getting a job after the course ending."]
+   },
+
+   {
+    "patterns": ["Does the course offer special payment plans to Mexican citizens?"],
+    "responses": ["Yes! Mexicans are eligible to get significant discounts. The payment plan options change rapidly, so please contact Diego for the most recent updates."]
+   },
+
+# this three question set are TECH related questions from the Mexican perspective.
+
+   {
+    "patterns": ["How is the current mexican job market opportunities for data scientists?"],
+    "responses": [" The tech industry is always growing, Mexico City is one of the most important tech hubs in latin America, and as of now there is a shortage of bilingual tech related talent."]
+   },
+
+   {
+    "patterns": ["I do not have a tech related background, how will I be able to compete with recent Computer Science graduates?"],
+    "responses": ["We do not believe that you can be a proficient data scientist in only 8 weeks. Yet this course will give you stong coding fundamentals and sharpen your english skills. "]
+   },
+
+   {
+    "patterns": ["Where do the Mexican alumni end up working after the completition of the bootcamp?"],
+    "responses": ["The Le Wagon graduates, are usually hired by our company partnerships, in the mean time of your job search, you may become a Le Wagon teacher."]
+   }

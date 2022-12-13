@@ -1,0 +1,132 @@
+{
+  "intents": [
+    {
+      "tag": "Payment Plan",
+      "patterns": [
+        "Can I pay for the program once I have finished it?",
+        "When should I pay for the full tuition?",
+        "What payment plans do you offer?",
+        "What are the instalments and payment schedule?",
+        "What is the payment schedule?",
+        "Can I pay cash when I arrive?"
+      ],
+      "responses": [
+        "Once a candidate is officially admitted, a down payment will be required upon the training agreement signature to secure the student's seat. The remaining balance shall be paid in one or several instalments, depending on the city policies."
+      ]
+    },
+    {
+      "tag": "Visa",
+      "patterns": [
+        "Do you give any help to get a visa?",
+        "Do you help international students to get a visa?",
+        "I'm an international student, can I apply?",
+        "Do I need Visa to come to Mexico?"
+      ],
+      "responses": [
+        "Le Wagon can't arrange any kind of visa, not for studying nor working. We can give you all the required documents to present at your Embassy. Remember that if you want us to support your job search, you need a work permit to work in the country you are applying to.",
+        "Depending on your situation and where you would like to do the bootcamp, you will potentially need a tourist or business visa. Please reach out to the city's Admissions Manager for more information and possible assistance. Extra information: for mainland China, in some cases, we can invite you on a Business Visa (M). Duration and number of entries vary according to your nationality. Please consult our team to have more information."
+      ]
+    },
+    {
+      "tag": "next dates",
+      "patterns": [
+        "What is the next available course schedule?",
+        "What are the dates of the bootcamp?",
+        "What are the next Web Development class dates?",
+        "What are the next Data Science bootcamp dates?",
+        "When will the next sessions take place?",
+        "When does the next course start?",
+        "When will the next course begin?"
+      ],
+      "responses": [
+        "You can check the next dates on the website, visiting each campus and course page.",
+        "We usually open applications 4 to 5 months in advance. You will see the next batch dates on the page of each city on Le Wagon's website, you may contact ur Admission and Sales Manager, Diego Garza for further information."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "How much is the cost of the data science bootcamp?",
+        "How much is the total price of the class?",
+        "What is the price of the program?",
+        "How much should I pay to book my spot in the program?",
+        "What are the tuition fees?"
+      ],
+      "responses": [
+        "The place reservation has a different amount for each campus. As of now in Mexico city the price is roughly 100k MXN",
+        "Price may vary depending on the location and its cost of living. As of now in Mexico city the price is roughly 100k MXN"
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "Do you help in finding accommodation?",
+        "Do you provide accommodation/catering?",
+        "Could you assist me to find an accommodation?"
+      ],
+      "responses": [
+        "We can give you some tips and put you in contact with our students' network once you are enrolled, but Le Wagon doesn't have any residence or housing available in the campus.",
+        "We do not provide accommodation or catering. The price of the course only includes the tuition - and unlimited tea and coffee. You may ask ur Admission and Sales Manager, Diego Garza for more details"
+      ]
+    },
+    {
+      "tag": "background",
+      "patterns": [
+        "I dont know aything about coding, is it ok?",
+        "I never coded in my life, Can I still attend the bootcamp",
+        "I have more than 10 years of working experience, is the bootcamp for me?",
+        "I have never done any coding before, can I join the Web Dev, Data Analytics or Data Science Bootcamps?",
+        "What are the pre-requisites to access the Web Development bootcamp?",
+        "I don't know anything about Web Development but I love it, could I join the bootcamp?",
+        "How do you reconcile the knowledge gap between students with different technical/programming levels?",
+        "I don't have any technical background, can I join the course?",
+        "I don't have any knowledge about coding, would that be ok?",
+        "What are the challenges of the bootcamp If I don't have any background?"
+      ],
+      "responses": [
+        "Firstly, the goal of our admissions process is to select a cohort that will be able to move more or less at the same pace. Secondly, completing the pre-work is important to make sure that everyone has the same foundational knowledge. That being said, some people will move faster than others, but that's OK! Our curriculum is designed to adapt itself to those that are moving more quickly and those that need a bit more personalized attention.",
+        "You only need a strong motivation to join the course! The Data Science course requires a little bit more of a maths background"
+      ]
+    },
+    {
+      "tag": "Campus",
+      "patterns": [
+        "Where is the campus?",
+        "What is the address of the campus",
+        "Where is the bootcamp located?",
+        "Where is the bootcamp?"
+      ],
+      "responses": [
+        "Here is the address: Av. Álvaro Obregón 213, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX Would you like to see on the map?"
+      ]
+    },
+    {
+      "tag": "invalid",
+      "patterns": [
+        "Marry me",
+        "I love You",
+        "date me",
+        "chat with me",
+        "I am bored"
+      ],
+      "responses": [
+        "Please ask course related query."
+      ]
+    },
+    {
+      "tag": "W",
+      "patterns": [
+        "why",
+        "how",
+        "when",
+        "I",
+        "you",
+        "Tell me"
+      ],
+      "responses": [
+        "Can't Understand Your Question",
+        "please elaborate your question"
+      ]
+    }
+  ]
+}
