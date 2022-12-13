@@ -530,8 +530,8 @@
       "Tell me"
     ],
     "responses": [
-      "Can't Understand Your Question",
-      "please elaborate your question"
+      "Sorry, I can't understand your question",
+      "Please elaborate your question."
     ]
   }
 
