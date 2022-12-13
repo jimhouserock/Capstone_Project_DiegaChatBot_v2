@@ -145,12 +145,12 @@
   },
 
   {"tag": "approval",
-  "patterns": ["How will I know if I get accepted?", "When will you inform if I get accepted?", "Is there a test to be accepted?", "Is there a test after applying the course?"],
+  "patterns": ["How will I know if I get accepted?", "When will you inform if I get accepted?", "Is there a test before I'm accepted?", "Is there a test after applying the course?"],
   "responses": ["Web Development: \nIf you pass the interview and complete the online quiz, it means you have the right motivation and are ready to dive into programming for two months. \nData Science course: \nIf you pass the interview with our Admissions Manager and the online assessment, it means you have both the motivation and the prerequisite skills."]
   },
 
   {"tag": "prepwork",
-  "patterns": ["Could you tell me about the prepwork?","What is the pre-work? Hoy many hours do you need for it?","Is there any preparation work once I get accepted?", "What's the preparation work?", "What should I study before joining the bootcamp", "What I will do in practice"],
+  "patterns": ["Could you tell me about the prepwork?","What is the pre-work? Hoy many hours do you need for it?","Is there any preparation work once I get accepted?", "What's the preparation work?", "What should I study before joining the bootcamp", "What I will do to practice before the course?"],
   "responses": ["Yes, we will send you an online preparation work once you've passed all the selection process. This prepwork is absolutely mandatory and must be completed before the beginning of the bootcamp. \nWeb Development course: \nThis work takes around 60 hours and will give you a basic knowledge of how the web works, terminal basic commands, versioning and basic concepts of web development and tech workflows. \nData Science course: \nThis work takes around 40 hours and covers the basics of programming with Python and SQL as well as some key concepts of Mathematics used every day by data scientists."]
   },
 
@@ -159,9 +159,9 @@
   "responses": ["Don't worry about it! Students with a project are invited to pitch their idea during the bootcamp while people without one are welcome to team up with them."]
   },
 
-  {"tag": "waiting list",
-  "patterns": ["Can I join a waiting list if a session is full?", "Can I join a waiting list if a batch is full?"],
-  "responses": ["We always open a waiting list when bootcamps are full, in case this happens! To join the waiting list, you will have to to go through the exact same application process."]
+  {"tag": "wait list",
+  "patterns": ["Can I join a waiting list if a class is full?", "Can I join a waiting-list if a batch is full?"],
+  "responses": ["We always open a wait list when bootcamps are full, in case this happens! To join the wait list, you will have to to go through the exact same application process."]
   },
 
   {"tag": "language",
@@ -180,12 +180,12 @@
   },
 
   {"tag": "difference",
-  "patterns": ["Could you tell me about the difference between bootcamp and college?","What is the difference between a Bootcamp and traditional education?","What's the main difference between Le Wagon and academic degree in Computer Science or Data Science?", "What's the main difference between thr Data Science course and academic degree?"],
+  "patterns": ["Could you tell me about the difference between bootcamp and college?","What is the difference between a Bootcamp and traditional education?","What's the main difference between Le Wagon and academic degree in Computer Science or Data Science?", "What's the main difference between Data Science course and academic degree?"],
   "responses": ["Bootcamps are not for everyone, even if anyone can apply for them. The concept of bootcamp comes from the military camps: it means effort, teamwork and passion above anything else. Our Bootcamps are designed for reinventing education and go beyond the passive traditional education. Learning is based on projects, and there are no grades or exams. You will get constant feedback from teachers and classmates, our methodology is hands-on and you will be supported by the Careers Department to achieve your career goals. At Le Wagon, the title is not the most important thing, but our job market network, our ability to adapt the content to the market needs and the technical skills of the Le Wagon.","The main difference between an academic degree and a bootcamp is that we don't start from scratch and we learn with a lot of practice using modern tools and methods. \nIn an academic curriculum in CS or DS, you will start learning all the theoretical knowledge (e.g. hardware layer of your computer for a CS degree, or advanced concepts of linear algebra and statistics for a DS degree) before moving to applied topics like web development or machine learning."]
   },
 
   {"tag": "city",
-  "patterns":["How should I choose the right city to do the course?","How would you recommend a city for me to work on?"],
+  "patterns":["How should I choose the right city to do the course?","How would you recommend a city for my bootcamp?"],
   "responses":["Le Wagon fulfils the exact same mission in all of our locations. The curriculum is the same everywhere as are all of our materials (lectures and exercises). We suggest you think about each city's environment, quality of life and langugage!"]
   },
 
@@ -200,7 +200,7 @@
   },
 
   {"tag": "virtual or in-person",
-  "patterns":["Are the classes in person ?","Would I be able to apply for remote if I am in a different continent?","Is the program taught in person or online?","Virtual class and in-person class, which one is better?", "Which one would you recommend: virtual class or in person?"],
+  "patterns":["Are classes in person ?","Would I be able to apply for remote if I am in a different continent?","Is the program taught in person or online?","Virtual class and in-person class, which one is better?", "Which one would you recommend: virtual class or in person?"],
   "responses":["Le Wagon teaches face to face programs in Mexico City, Mexico. We also offer remote programs with a live virtual environment for students from all over the world."]
   },
 
@@ -210,7 +210,7 @@
   },
 
   {"tag": "payment type",
-   "patterns": ["Can I pay cash when i arrive?","Can I pay with my credit card?","Do you take credit cards?", "Do you accept Mastercard?", "Are you accepting cash only?" ],
+   "patterns": ["Can I pay cash?","Can I pay with my credit card?","Do you take credit cards?", "Do you accept Mastercard?", "Are you accepting cash only?" ],
    "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
   },
 
@@ -226,7 +226,7 @@
 
   {"tag": "suggest",
     "patterns": ["you are useless","useless","suggest","suggestions","you are bad"],
-    "responses": ["Please contact for your suggestions to our Admission and Sales Manager, Diego Garza. Thank you for helping me improve!"]
+    "responses": ["Please forward your suggestions to our Admission and Sales Manager, Diego Garza. Thank you for helping me improve!"]
   },
 
   {"tag": "Mexican citizens & residents",
@@ -275,7 +275,7 @@
   },
 
   {"tag": "certificate",
-    "patterns": ["Will I get a certificate after completion of the program? Is it an official certificate?"],
+    "patterns": ["Will I get a certificate after completion of the program?","Is there an official certificate?"],
     "responses": ["Le Wagon provides a private certificate that proves that the program was completed. \nThe bootcamps are not recognized by the traditional standards of the Education administration. Due to its intensive and hands-on format, it wouldn't be possible to adapt the content and schedules to the official requirements."]
   },
 
@@ -377,12 +377,12 @@
 
   {"tag": "Building",
     "patterns": ["Does Le Wagon plan on openning another campus in Mexico?"],
-    "responses": [" For the time being Le Wagon is based on Mexico City's impact hub building. There is a chance for you to take the corse remotely, yet we strongly recommend you chose the in-person course! Come to Mexico City!"]
+    "responses": ["For the time being Le Wagon is based on Mexico City's Impact Hub building. There is a chance for you to take the corse remotely, yet we strongly recommend you chose the in-person course! Come to Mexico City!"]
    },
 
    {"tag": "Mexico",
     "patterns": ["What are the biggest advantages of taking the bootcamp at the Mexico City camppus?"],
-    "responses": [" Mexico city is a modern, tolerant and vibrant city. The cost of living is much lower when compared to our US and Europe campuses. The city is the most important business and tech related hub in the country. Taking the course here might increase your chances of getting a job after the course ending."]
+    "responses": ["Mexico city is a modern, tolerant and vibrant city. The cost of living is much lower when compared to our US and Europe campuses. The city is the most important business and tech related hub in the country. Taking the course here might increase your chances of getting a job after the course ending."]
    },
 
    {"tag": "Mexican",
@@ -393,7 +393,7 @@
 
    {"tag": "Job Market",
     "patterns": ["How is the current mexican job market opportunities for data scientists?"],
-    "responses": [" The tech industry is always growing, Mexico City is one of the most important tech hubs in latin America, and as of now there is a shortage of bilingual tech related talent."]
+    "responses": ["The tech industry is always growing, Mexico City is one of the most important tech hubs in latin America, and as of now there is a shortage of bilingual tech related talent."]
    },
 
    {"tag": "Tech Background",
