@@ -103,7 +103,7 @@ def generate_answer():
         client = Client(account_sid, auth_token)
 
         call = client.calls.create(
-                                url='./voice.xml',
+
                                 to='+529871182931',
                                 from_='+17208066079'
                             )
