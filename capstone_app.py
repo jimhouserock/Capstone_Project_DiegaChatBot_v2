@@ -99,13 +99,13 @@ st.title("Diega, Le Wagon Web Assistant")
 # st.image("https://avatars.dicebear.com/api/bottts/11.svg", width=50)
 
 # Welcome message
-st.write(
-        """
-        **Welcome to Le Wagon Mexico. My name is Diega. I am here to assist you.**
-
-        ℹ️ Please be patient, I am still learning. Thank you! ❤️
-        """
-    )
+#st.write(
+#        """
+#        **Welcome to Le Wagon Mexico. My name is Diega. I am here to assist you.**
+#
+#        ℹ️ Please be patient, I am still learning. Thank you! ❤️
+#        """
+#    )
 
 # Balloons falling
 # st.balloons()
