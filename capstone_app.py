@@ -112,7 +112,7 @@ st.write(
 
 # Rains Mexican flags
 rain(
-    emoji="🇲🇽",
+    emoji="🎅",
     font_size=40,
     falling_speed=5,
     animation_length=1,
