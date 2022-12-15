@@ -89,9 +89,9 @@ st.set_page_config(page_title="Diega is here!", page_icon=":robot:")
 col1, col2 = st.columns([2,1])
 with col1:
     image = Image.open('images.png')
-    st.image(image, caption='',width=300)
+    st.image(image, caption='',width=200)
 with col2:
-    st.image("https://avatars.dicebear.com/api/bottts/11.svg", width=90)
+    st.image("https://avatars.dicebear.com/api/bottts/11.svg", width=50)
 
 
 # Page Title
@@ -99,10 +99,10 @@ st.title("Diega, Le Wagon Web Assistant")
 # st.image("https://avatars.dicebear.com/api/bottts/11.svg", width=50)
 
 # Welcome message
-#st.write(
+# st.write(
 #        """
 #        **Welcome to Le Wagon Mexico. My name is Diega. I am here to assist you.**
-#
+
 #        ℹ️ Please be patient, I am still learning. Thank you! ❤️
 #        """
 #    )
@@ -113,7 +113,7 @@ st.title("Diega, Le Wagon Web Assistant")
 # Rains Mexican flags
 rain(
     emoji="🎅",
-    font_size=40,
+    font_size=50,
     falling_speed=5,
     animation_length=1,
 )
@@ -126,12 +126,6 @@ footer {visibility: hidden;}
 </style
 """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-
-
-#image = Image.open('images.png')
-#st.image(image, width=150)
-#st.title("Diega, Le Wagon Web Assistant")
-
 
 
 if "history" not in st.session_state:
